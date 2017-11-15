@@ -1,0 +1,15 @@
+---
+# tasks file for Dell-Networking.dellos-copy-config 
+ - name: "Merge the config file to running configuration for OS9"
+   dellos9_config:
+      src: "{{ hostname }}.j2"
+      provider: "{{ cli }}"
+   when: ansible_net_os_name == "dellos9"
+#   notify: save config os9
+
+ - name: "Merge the config file to running configuration for OS10"
+   dellos10_config:
+      src: "{{ hostname }}.j2"
+      provider: "{{ cli }}"
+   when: ansible_net_os_name == "dellos10"
+#   notify: save config os10
