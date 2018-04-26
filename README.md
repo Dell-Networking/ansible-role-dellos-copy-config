@@ -60,6 +60,7 @@ This example uses the *dellos.dellos-copy-config* role to push the configuration
     ansible_ssh_user: xxxxx
     ansible_ssh_pass: xxxxx
     ansible_network_os: dellos9
+
     # This variable shall be applied in the below jinja template for each host by defining here
     dellos_bgp
        asn: 64801
