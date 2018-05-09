@@ -49,7 +49,7 @@ This example uses the *dellos.dellos-copy-config* role to push the configuration
 
 **Sample hosts file**
 
-    leaf1 ansible_host= <ip_address> ansible_net_os_name= <OS name(dellos9 or dellos10)>
+    leaf1 ansible_host= <ip_address> 
 
 **Sample host_vars/leaf1**
 
